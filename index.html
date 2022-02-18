@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/icons/ico.png" type="image/x-icon">
+    <title>Fun with HTML5 Canvas</title>
+</head>
+<body>
+    <header>
+        <h1 class="header_visually-hidden">Fun with HTML5 Canvas</h1>
+    </header>
+    <main>
+        <div class="app">
+            <div class="tools">
+                <div class="type">
+                    <button id="pencil" class="button">
+                        <img src="./assets/img/pencil.png" alt="Pencil">
+                    </button>
+                    <button id="pen" class="button">
+                        <img src="./assets/img/pen.png" alt="Pen">
+                    </button>
+                    <button id="brush" class="button">
+                        <img src="./assets/img/brush.png" alt="Brush">
+                    </button>
+                    <button id="marker" class="button">
+                        <img src="./assets/img/marker.png" alt="Marker">
+                    </button>
+                    <button id="fun" class="button">
+                        <img src="./assets/img/fun.png" alt="Fun">
+                    </button>
+                </div>
+                <div class="size">
+                    <label for="line-size">Line size</label>
+                    <input type="range" id="line-size" min="1" max="100" value="20">
+                </div>
+                <div class="color">
+                    <label for="line-color">
+                        <img src="./assets/img/color.png" alt="Color">
+                    </label>
+                    <input type="color" id="line-color" value="#000000">
+                </div>
+                <button id="undo">
+                    <img src="./assets/img/undo.png" alt="Undo">
+                </button>
+                <button id="reset">
+                    <img src="./assets/img/reset.png" alt="Reset">
+                </button>
+                <button id="save">
+                    <img src="./assets/img/save.png" alt="Save">
+                </button>
+            </div>
+            <canvas id="canvas"></canvas>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>

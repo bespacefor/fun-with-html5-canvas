@@ -1,7 +1,7 @@
 //Canvas' info.
 const canvas = document.getElementById('canvas');
 canvas.width = 1000;
-canvas.height = 690;
+canvas.height = 565;
 
 //Context parameters.
 const ctx = canvas.getContext('2d');

@@ -1,0 +1,101 @@
+body {
+    box-sizing: border-box;
+    margin-top: 0;
+    padding: 0;
+    background: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}
+
+.header_visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.app {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    height: 800px;
+    transform: translate(-50%, -45%);
+}
+
+.type {
+    display: flex;
+    margin: 0 0 0 5px;
+}
+
+.app .tools {
+    margin-top: 20px;
+    height: 110px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: cornsilk;
+}
+
+button, .size, .color {
+    margin: 0px 5px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 10px;
+    transition: all 0.3s ease-out;
+}
+
+button:hover {
+    background: crimson;
+    border-radius: 50%;
+}
+
+button:active {
+    transform: scale(1.1,1.1);
+}
+
+.active {
+    background: gray;
+}
+
+.size input {
+    height: 5px;
+    cursor: pointer;
+}
+
+.color label img {
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.3s ease-out;
+}
+
+.color label img:hover {
+    background: crimson;
+    border-radius: 25%;
+}
+
+.color label img:active {
+    transform: scale(1.1,1.1);
+}
+
+#line-color {
+    width: 90%;
+}
+
+#line-color:hover {
+    cursor: pointer;
+}
+
+#save {
+    margin: 0 10px 0 5px;
+}
+
+#canvas {
+    cursor: crosshair;
+}
